@@ -1,0 +1,15 @@
+.p {
+	margin: 0;
+
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.lg {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.sm {
+	font-size: 14px;
+}
