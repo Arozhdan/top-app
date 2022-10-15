@@ -6,11 +6,9 @@ import { ButtonProps } from "./Button.props";
 export const Button = ({ appearance = 'ghost', arrow, children, className, ...props }: ButtonProps): JSX.Element => {
 	return (
 		<button className={
-			cn(styles.button, className, {
-				[styles.primary]: appearance === 'primary',
-				[styles.ghost]: appearance === 'ghost',
-			})}
-			{...props}>
+			cn(styles.button, className, styles[appearance])}
+			{...props}
+		>
 			{children}
 			{arrow &&
 				<ChevronRightIcon className={cn(styles.arrow, {
