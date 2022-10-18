@@ -1,0 +1,15 @@
+.star {
+	width: 20px;
+
+	transition: var(--transition);
+
+	color: var(--grey-dark);
+}
+
+.isEditable {
+	cursor: pointer;
+}
+
+.filled {
+	color: var(--primary);
+}
